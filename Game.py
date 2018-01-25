@@ -4,7 +4,7 @@
 """modules to import"""
 import pygame
 from pygame.locals import *
-from Class import *
+from class_board import *
 
 pitch = BoardGame.initialize_board(1)#load layout #1
 
