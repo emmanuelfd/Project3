@@ -1,5 +1,7 @@
 #! /usr/bin/env python3
 # coding: utf-8
+
+"""modules to import"""
 from random import randint
 import pygame
 
@@ -25,7 +27,7 @@ class BoardGame:
         pass
 
     @classmethod
-    def initialize_board(self, layout):
+    def initialize_board(cls, layout):
         """initializion : load the layout from file to build a 2D maze (lists in lists)
         + loading 3 items at random position + loading pictures
         """
