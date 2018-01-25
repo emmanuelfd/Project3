@@ -10,7 +10,7 @@ pitch = BoardGame.initialize_board(1)#load layout #1
 
 gyver = McGyver()
 game_on = True# true means games is on
-quit = False
+#close_board  = False
 
 print(pitch)
 
@@ -62,7 +62,7 @@ while game_on:
 
         if event.type == QUIT:
             game_on = False
-            quit = True
+            #close_board = True
 
     print(gyver.new_position_x)
     print(gyver.new_position_y)
@@ -92,16 +92,16 @@ while game_on:
         print("you need " + str((3 - gyver.goodies)) + " more iterms to walk out !!")#for the console
 
     elif next_move == 3:#fight and sortie
-        exit = gyver.fight()
-        
-        if exit == 1:
+        out = gyver.fight()
+
+        if out == 1:
             print("well you are out!!")#for the console
             BoardGame.ending_game(1)#to display a end popup
 
         else:
             print("you lost! remember to cocllet  3 items first !!")#for the console
             BoardGame.ending_game(1)#to display a end popup
-            
+
         game_on = False #breaking the while to stop the game
 
     else:
