@@ -89,7 +89,8 @@ while game_on:
         pitch[gyver.new_position_x][gyver.new_position_y] = 5#5 is mc_giver
         gyver.goodies += 1#keep the item, incrementation
         print("nice you have just collected a new goodies")#for the console
-        print("you need " + str((3 - gyver.goodies)) + " more iterms to walk out !!")#for the console
+        print("you need " + str((3 - gyver.goodies)) + \
+        " more iterms to walk out !!")#for the console
 
     elif next_move == 3:#fight and sortie
         out = gyver.fight()
@@ -99,8 +100,8 @@ while game_on:
             BoardGame.ending_game(1)#to display a end popup
 
         else:
-            print("you lost! remember to cocllet  3 items first !!")#for the console
-            BoardGame.ending_game(1)#to display a end popup
+            print("you lost! remember to collect  3 items first !!")#for the console
+            BoardGame.ending_game(0)#to display a end popup
 
         game_on = False #breaking the while to stop the game
 

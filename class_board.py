@@ -146,7 +146,8 @@ class Position:
 
     def new_position(self):
         """to check if a move is allowed"""
-        if self.position_x < 0 or self.position_y < 0 or self.position_x > 14 or self.position_y > 14: # out the board
+        if self.position_x < 0 or self.position_y < 0 \
+        or self.position_x > 14 or self.position_y > 14: # out the board
             move = 0#no move before cell assignation to avoid out of range error
 
         else:#if in the board we check if we can move
