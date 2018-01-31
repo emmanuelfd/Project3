@@ -20,7 +20,7 @@ pygame.init()#pygame initialization
 
 while game_on:
 
-    pygame.time.Clock().tick(30)#avoid  pitcture to blink
+    pygame.time.Clock().tick(30)#avoid pitcture to blink
     pitch = BoardGame.load_board(pitch) ##load object on the board
     pygame.display.flip()
 
